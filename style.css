@@ -139,55 +139,115 @@ button:hover {
     transform: scale(1.1);
 }
 
-.formulaire {
-    text-align: left;
-    background-color: #14151b;
+.recap-wrapper {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #131520;
+    border-radius: 12px;
     padding: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    margin: auto;
-    
+    box-sizing: border-box;
+}
 
+.recap-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.recap-table th,
+.recap-table td {
+    border: 1px solid #dfbd27;
+    padding: 14px 16px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.recap-table th {
+    width: 200px;
+    background-color: #1a1c2c;
+    color: #dfbd27;
+    font-weight: bold;
+}
+
+.recap-table td {
+    background-color: rgba(20, 21, 27, 0.9);
+}
+
+.formulaire {
+    background-color: #131520;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 980px;
+    box-sizing: border-box;
+}
+
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ligne-form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.ligne-1 .champ {
+    flex: 1;
+}
+
+.ligne-2 {
+    align-items: flex-start;
+}
+
+.batiment {
+    flex: 0 0 30%;
+}
+
+.message {
+    flex: 1;
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.actions-form {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .form-button {
-    background-color: #1c1c1c;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    
+    margin: 0;
 }
 
-footer {
-    font-style: italic;
-    font-family: Arial;
-
-}
 textarea {
     resize: none;
-    width: 400px;
-    height: 80px;
+    width: 100%;
+    min-height: 80px;
     background-color: #1c1c1c;
     border: none;
-    display: inline-block;
-    margin-top: 5px;
-
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
 }
 
-input{
+input,
+select {
     color: #ffffff;
     background-color: #1c1c1c;
     border: none;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
-
-
+    width: 100%;
+    box-sizing: border-box;
 }
 
-select {
-    color:#ffffff;
-    background-color: #1c1c1c;
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
+label {
+    color: #dfbd27;
 }

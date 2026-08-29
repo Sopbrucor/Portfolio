@@ -38,52 +38,66 @@
         <h1>Accueil</h1>
 
         <div class="formulaire">
-            <form action="recap.html" method="post">
+            <form id="formulaireAccueil" action="recap.html" method="post">
 
-                <label for="grade">Grade:</label>
-                <select id="grade" name="grade" required>
-                    <option value="">Sélectionnez un grade</option>
-                    <option value="COL">Colonel</option>
-                    <option value="LCL">Lieutenant Colonel</option>
-                    <option value="CDT">Commandant</option>
-                    <option value="CNE">Capitaine</option>
-                    <option value="LTN">Lieutenant</option>
-                    <option value="MJR">Major</option>
-                    <option value="ADC">Adjudant Chef</option>
-                    <option value="ADJ">Adjudant</option>
-                    <option value="SCH">Sergent Chef</option>
-                    <option value="SGT">Sergent</option>
-                    <option value="CC1">Caporal Chef de 1er Classe</option>
-                    <option value="CCH">Caporal Chef</option>
-                    <option value="CPL">Caporal</option>
-                    <option value="1CL">1ère Classe</option>
-                    <option value="TRS">Transmetteur</option>
+                <div class="ligne-form ligne-1">
+                    <div class="champ">
+                        <label for="grade">Grade:</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Sélectionnez un grade</option>
+                            <option value="COL">Colonel</option>
+                            <option value="LCL">Lieutenant Colonel</option>
+                            <option value="CDT">Commandant</option>
+                            <option value="CNE">Capitaine</option>
+                            <option value="LTN">Lieutenant</option>
+                            <option value="MJR">Major</option>
+                            <option value="ADC">Adjudant Chef</option>
+                            <option value="ADJ">Adjudant</option>
+                            <option value="SCH">Sergent Chef</option>
+                            <option value="SGT">Sergent</option>
+                            <option value="CC1">Caporal Chef de 1er Classe</option>
+                            <option value="CCH">Caporal Chef</option>
+                            <option value="CPL">Caporal</option>
+                            <option value="1CL">1ère Classe</option>
+                            <option value="TRS">Transmetteur</option>
+                        </select>
+                    </div>
 
-                </select>
+                    <div class="champ">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
 
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
+                    <div class="champ">
+                        <label for="compagnie">Compagnie:</label>
+                        <select id="compagnie" name="compagnie" required>
+                            <option value="">Sélectionnez une compagnie</option>
+                            <option value="1CIE">1ère Compagnie</option>
+                            <option value="2CIE">2ème Compagnie</option>
+                            <option value="3CIE">3ème Compagnie</option>
+                            <option value="4CIE">4ème Compagnie</option>
+                            <option value="5CIE">5ème Compagnie</option>
+                            <option value="9CIE">9ème Compagnie</option>
+                            <option value="10CIE">10ème Compagnie</option>
+                        </select>
+                    </div>
+                </div>
 
-                <label for="compagnie">Compagnie:</label>
-                <select id="compagnie" name="compagnie" required>
-                    <option value="">Sélectionnez une compagnie</option>
-                    <option value="1CIE">1ère Compagnie</option>
-                    <option value="2CIE">2ème Compagnie</option>
-                    <option value="3CIE">3ème Compagnie</option>
-                    <option value="4CIE">4ème Compagnie</option>
-                    <option value="5CIE">5ème Compagnie</option>
-                    <option value="9CIE">9ème Compagnie</option>
-                    <option value="10CIE">10ème Compagnie</option>
+                <div class="ligne-form ligne-2">
+                    <div class="champ batiment">
+                        <label for="bâtiment">Bâtiment:</label>
+                        <input type="text" id="bâtiment" name="bâtiment" required>
+                    </div>
 
-                </select> <br> <br>
+                    <div class="champ message">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                </div>
 
-                <label for="bâtiment">Bâtiment:</label>
-                <input type="text" id="bâtiment" name="bâtiment" required>
-
-                <label for="message">Message:</label> 
-                <textarea id="message" name="message" required></textarea>
-
-                <input class="form-button" type="submit" value="Envoyer">
+                <div class="actions-form">
+                    <input class="form-button" type="submit" value="Envoyer">
+                </div>
             </form>
 
 
@@ -96,6 +110,8 @@
                 <p>© 2024 SITI Suivi des Interventions et Travaux des Infrastructures. All rights reserved.</p>
             </div>
     </footer>
+
+    <script src="javascript.js"></script>
 
 </body>
 
