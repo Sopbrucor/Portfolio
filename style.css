@@ -136,6 +136,6 @@ button {
 button:hover {
     background-color: #191a22;
     color: #dfbd27;
-    transform: translateY(-2px);
+    transform: scale(1.1);
 }
 
