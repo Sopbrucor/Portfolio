@@ -1,5 +1,58 @@
 body {
-    background-color: #10132e;
+    background-color: #131520;
     font-family: Arial, sans-serif;
 
+}
+
+.nom-du-site {
+    color: #dfbd27;
+    font-size: 150px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 45px;
+
+}
+
+.nom-du-site .logo {
+    display: flex;
+    align-items: left;
+    margin-right: 5px;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+
+
+#logo1 {
+    width: 50px;
+    height: 300px;
+    background-color: #dfbd27;
+    border-radius: ;
+    margin-right: 10px;
+}
+
+#logo2 {
+    width: 50px;
+    height: 200px;
+    background-color: #dfbd27;
+    border-radius: ;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+}
+
+#logo3 {
+    width: 50px;
+    height: 100px;
+    background-color: #dfbd27;
+    border-radius: ;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+
+#nom-du-site {
+    font-size: 150px;
+    font-weight: bold;
+    color: #dfbd27;
+;
 }
