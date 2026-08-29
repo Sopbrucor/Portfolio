@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
 }
 
+
 .nom-du-site {
     color: #dfbd27;
     font-size: 150px;
@@ -60,9 +61,18 @@ body {
 
 .siti-descrpition {
     color: #a79545;
-    font-size: 14.5px;
+    font-size: 15px;
     font-family: Arial;
     font-weight: bold;
     padding-left: 200px;
     margin-top: -10px;
+}
+
+footer {
+    text-align: bottom;
+    margin-top: 700px;
+    background-color: #131520;
+    color: #dfbd27;
+    text-align: center;
+    padding: 20px;
 }
